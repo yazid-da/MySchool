@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MYSCHOOL.  </title>
+    <title>MYSCHOOL.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{url('index')}}" class="nav-item nav-link  ">Acceuil</a>
-                <a href="{{url('courses')}}" class="nav-item nav-link  ">Nos Ecole</a>
+                <a href="{{url('courses')}}" class="nav-item nav-link ">Nos Ecole</a>
                  
                 <div class="nav-item dropdown">
                     <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">service</a>
@@ -65,63 +65,129 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EXTRA</a>
+                    <a href="{{url('about')}}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">EXTRA</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="{{url('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
-                        <a href="{{url('bureaux')}}" class="dropdown-item">BUREAU DES ÉTUDIANTS</a>
-                        <a href="{{url('fourniture')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
+                        <a href="{{url('associationdesparentS')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
+                        <a href="{{url('bureaux.blade.php')}}" class="dropdown-item">BUREAUX DES ÉTUDIANTS</a>
+                        <a href="{{url('fourniture.blade.php')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
                     </div>
                 </div>
              
                 <a href="{{url('contact')}}" class="nav-item nav-link">Contact</a>
             </div>
             <a href="{{url('inscription')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
-            <a href="{{url('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block active">Connexion<i class="fa fa-user ms-3"></i></a>
+            <a href="{{url('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Connexion<i class="fa fa-user ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
+    <div class="container-fluid bg-primary py-5 mb-5 page-header-fourniture">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">FOURNITURES ECOLES</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">EXTRA</a></li>
+                            <li class="breadcrumb-item text-white " aria-current="page">FOURNITURES ECOLES</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- About Start -->
+    
 
-
-    <!-- Contact Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Connexion</h6>
-                <h1 class="mb-5">Se connecter</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form class="form-inline">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Votre Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Mot de passe</label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Mémoriser moi
-                                </label>
-                              </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Connexion</button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="row g-5">
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/fournitures.png" alt="" style="object-fit: cover;">
+                    </div>
+</br>
+</br>
+</br>
+</br>
+                    <h1 class="mb-4" id="scientigique">Primaire </h1>
+                    <div class="wpb_wrapper">
+			<ul>
+<li title="" data-original-title="">CE1 (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/CE1.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">CE2 (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/CE2.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">CE3 (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/CE3.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">CE4 (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/CE4.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">CE5 (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/CE5.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">CE6 (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/CE6.pdf">Télécharger</a>)</li>
+</ul>
+
+		</div>
+                        
+                    </div>
+                  
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+           
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                   
+                    <h1 class="mb-4">Collège </h1>
+                    <div class="wpb_wrapper">
+			<ul>
+<li title="" data-original-title="">1ère Collège (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/1COL.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">2ème Collège (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/2COL.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">3ème Collège (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/3COL.pdf">Télécharger</a>)</li>
+</ul>
+
+		</div>
+                        
+                    </div>
+                     
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                   
+                   <h1 class="mb-4">Lycée
+ </h1>
+ <div class="wpb_wrapper">
+			<p><strong>Tronc Commun:</strong></p>
+<ul>
+<li title="" data-original-title="">Tronc Commun BIOF (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/TC.pdf">Télécharger</a>)</li>
+</ul>
+<p><strong>1ère Baccalauréat:</strong></p>
+<ul>
+<li title="" data-original-title="">Sciences Economiques (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/1BAC_ECO.pdf">Télécharger)</a></li>
+<li title="" data-original-title="">Sciences Expérimentales BIOF (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/1BAC_SC.pdf">Télécharger)</a></li>
+<li>Sciences Mathématiques BIOF(<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/1BAC_SM.pdf">Télécharger</a>)</li>
+</ul>
+<p><strong>2ème Baccalauréat:</strong></p>
+<ul>
+<li>Sciences Economiques (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/2BAC_ECO.pdf">Télécharger</a> )</li>
+<li title="" data-original-title="">Sciences physiques BIOF <a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/2BAC_PC.pdf">(Télécharger)</a></li>
+<li>Sciences Mathématiques A BIOF (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/2BAC_A_SM.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">Sciences Mathématiques B BIOF (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/2BAC_B_SM.pdf">Télécharger</a>)</li>
+<li title="" data-original-title="">Sciences de la Vie et de la Terre BIOF (<a href="http://lesecolesihsane.com/wp-content/uploads/fourniturescolaire/2BAC_SVT.pdf">Télécharger</a>)</li>
+</ul>
+
+		</div>
+                       
+                   </div>
+                 
+               </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+  
+        </div>
+    </div>
+    <!-- About End -->
+    
 
 
     <!-- Footer Start -->

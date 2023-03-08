@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Learn.</title>
+    <title>MYSCHOOL.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -40,49 +40,54 @@
     </div>
     <!-- Spinner End -->
 
-
+   
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <!--<h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>-->
-            <img class="logoimg" src="img/leanlogo.png"></img>
+            <img class="logoimg" src="img/logo.png"></img>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Acceuil</a>
-                <a href="courses.html" class="nav-item nav-link">Nos Cours</a>
-                <!--<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="{{url('index')}}" class="nav-item nav-link   ">Acceuil</a>
+                <a href="{{url('courses')}}" class="nav-item nav-link  ">Nos Ecole</a>
+                 
+                <div class="nav-item dropdown">
+                    <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">service</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="{{url('transport')}}" class="dropdown-item">TRANSPORT SCOLAIRE</a>
+                        <a href="{{url('cafe')}}" class="dropdown-item">CAFÉTÉRIA – ICAFÉ</a>
+                       
                     </div>
-                </div>-->
-                <a href="about.html" class="nav-item nav-link">A Propos</a>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EXTRA</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="{{URL('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
+                        <a href="{{URL('bureaux')}}" class="dropdown-item">BUREAU DES ÉTUDIANTS</a>
+                        <a href="{{URL('fourniture')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
+                    </div>
+                </div>
+             
+                <a href="{{url('contact')}}" class="nav-item nav-link active">Contact</a>
             </div>
-            <a href="Insciption.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
-            <a href="Login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Connexion<i class="fa fa-user ms-3"></i></a>
+            <a href="{{url('inscription')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{url('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Connexion<i class="fa fa-user ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
-
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container-fluid bg-primary py-5 mb-5 page-header-contact">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h1 class="display-3 text-white animated slideInDown">Contactez Nous</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Acceuil</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
-                        </ol>
+                         
                     </nav>
                 </div>
             </div>
@@ -181,7 +186,7 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Accès Rapide</h4>
-                    <a class="btn btn-link" href="">Acceuil</a>
+                    <a class="btn btn-link" href="ho,e">Acceuil</a>
                     <a class="btn btn-link" href="">Nos Cours</a>
                     <a class="btn btn-link" href="">A Propos</a>
                     <a class="btn btn-link" href="">Contact</a>
@@ -190,7 +195,7 @@
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Rue 123, Marrakech, Maroc</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+212 512 345678</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Contact@learn.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>MYSCHOOL@learn.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -235,16 +240,9 @@
             <div class="copyright">
                 <div class="row">
                     <div>
-                        &copy; <a class="border-bottom" href="#">Learn. 2022</a>, tous les droits sont réservés.
+                        &copy; <a class="border-bottom" href="#">MYSCHOOL. 2023</a>, tous les droits sont réservés.
                     </div>
-                <!--<div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Acceuil</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
-                    </div>-->
+               
                 </div>
             </div>
         </div>

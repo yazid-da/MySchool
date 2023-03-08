@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MYSCHOOL.  </title>
+    <title>MYSCHOOL.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -67,7 +67,7 @@
                 <div class="nav-item dropdown">
                     <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EXTRA</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="{{url('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
+                        <a href="{{URL('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
                         <a href="{{url('bureaux')}}" class="dropdown-item">BUREAU DES ÉTUDIANTS</a>
                         <a href="{{url('fourniture')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
                     </div>
@@ -80,50 +80,69 @@
         </div>
     </nav>
     <!-- Navbar End -->
+ 
 
 
+    <!-- Navbar End -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Connexion</h6>
-                <h1 class="mb-5">Se connecter</h1>
+    <div class="container-fluid bg-primary py-5 mb-5 page-header-cafe">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">CAFÉTÉRIA – ICAFÉ</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="{{URL('associationdesparent')}}">SERVICE</a></li>
+                            <li class="breadcrumb-item text-white " aria-current="page">CAFÉTÉRIA – ICAFÉ</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form class="form-inline">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Votre Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Mot de passe</label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Mémoriser moi
-                                </label>
-                              </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Connexion</button>
-                            </div>
-                        </div>
-                    </form>
+        </div>
+    </div> 
+    <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                   
+                    <h1 class="mb-4" id="scientigique"> </h1>
+                    <p class="mb-4">
+                    Le lycée Ihsane dispose d’une cafétéria destinée à servir tous les jours ouvrables ses élèves ainsi que son corps professoral et administratif, baptisée I’CAFÉ.</br>
+
+Cette cafétéria qui est une initiative de la direction de l’école est très bien accueillie par tout le monde.</br> Nos élèves pourront s’offrir volontiers des menus variés.</br>
+
+Les élèves ne cachent pas leur satisfaction vis-à-vis de la qualité de l’aménagement décoration et ambiance sensorielle au sein de cette espace de détente.</br>
+
+La préparation des boissons et casse-croûtes, quant à elle, se déroule dans les meilleures conditions hygiéniques.</br>
+
+Les Écoles Ihsane sont persuadées que cette implantation est susceptible d’augmenter le niveau de productivité des élèves ainsi que ses collaborateurs.</br>
+                    </div>
+                  
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
-
-
+    
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+             
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cafe3.png" alt="">
+                               
+                            </a>
+                        </div>
+                         
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">

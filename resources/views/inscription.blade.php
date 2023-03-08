@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MYSCHOOL.  </title>
+    <title>MYSCHOOL</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -40,7 +40,6 @@
     </div>
     <!-- Spinner End -->
 
-
    
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -54,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{url('index')}}" class="nav-item nav-link  ">Acceuil</a>
-                <a href="{{url('courses')}}" class="nav-item nav-link  ">Nos Ecole</a>
+                <a href="{{url('courses')}}" class="nav-item nav-link ">Nos Ecole</a>
                  
                 <div class="nav-item dropdown">
                     <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">service</a>
@@ -67,53 +66,178 @@
                 <div class="nav-item dropdown">
                     <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EXTRA</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="{{url('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
-                        <a href="{{url('bureaux')}}" class="dropdown-item">BUREAU DES ÉTUDIANTS</a>
-                        <a href="{{url('fourniture')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
+                        <a href="{{URL('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
+                        <a href="{{URL('bureaux')}}" class="dropdown-item">BUREAU DES ÉTUDIANTS</a>
+                        <a href="{{URL('fourniture')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
                     </div>
                 </div>
              
                 <a href="{{url('contact')}}" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="{{url('inscription')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
-            <a href="{{url('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block active">Connexion<i class="fa fa-user ms-3"></i></a>
+            <a href="{{url('inscription')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block ACTIVE">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{url('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Connexion<i class="fa fa-user ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
-
 
 
     <!-- Contact Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Connexion</h6>
-                <h1 class="mb-5">Se connecter</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">inscription</h6>
+                <h1 class="mb-5">S'inscrire</h1>
             </div>
-            <div class="row g-4">
+            <div class="row g-4" >
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <form class="form-inline">
                         <div class="row g-3">
+                            
+                        <h6>En quel niveau souhaitez-vous inscrire votre enfant ?</h6>
+
+                            <select name="pays" id="pays" class="form-control">
+<optgroup label="Matternelle ">
+<option value="Matternelle-Petitsection" >Matternelle-Petit section</option>
+<option value="Matternelle-Moyennesection">Matternelle-Moyenne section</option>
+<option value="Matternelle-Grandesection">Matternelle-Grande section</option>
+</optgroup>
+<optgroup label="Primaire">
+<option value="chine">Primaire-CE1</option>
+<option value="japon">Primaire-CE2</option>
+<option value="chine">Primaire-CE3</option>
+<option value="japon">Primaire-CE4</option>
+<option value="chine">Primaire-CE5</option>
+<option value="japon">Primaire-CE6</option>
+</optgroup>
+<optgroup label="Collége">
+<option value="chine">Collége-1ére année collége</option>
+<option value="japon">Collége-2éme année collége</option>
+<option value="chine">Collége-3éme année collége</option>
+ 
+</optgroup>
+<optgroup label="Lycee">
+<option value="chine">Tronc commun </option>
+<option value="japon">1ére année Baccalauréat- Economie</option>
+<option value="japon">1ére année Baccalauréat- Science Expérimentale</option>
+<option value="japon">1ére année Baccalauréat- Science Mathematique </option>
+<option value="japon">2éme année Baccalauréat- Economie</option>
+<option value="japon">2éme année Baccalauréat- Science Mathematique A</option>
+<option value="japon">2éme année Baccalauréat- Science Mathematique B</option>
+<option value="japon">2éme année Baccalauréat- Science Physique </option>
+<option value="japon">2éme année Baccalauréat- Science de la vie de la terre</option>
+ 
+ 
+</optgroup>
+</select>
+                            
+                              <br>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nomeleve" placeholder="Nom">
+                                    <label for="nom">Nom Élève
+</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="prenom" class="form-control" id="prenomeleve" placeholder="Prénom">
+                                    <label for="prenom">Prénom Élève</label>
+                                </div>
+                            </div>
+                           <!-- <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="tele" class="form-control" id="tele" placeholder="Gsm">
+                                    <label for="tele">Télephone</label>
+                                </div>
+                            </div>-->
+                  
+                            <div class="col-md-6 form-check ">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">fille</label>
+                              </div>
+                              <div class="col-md-6 form-check">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">garçon</label>
+                              </div>
+                              <br>
+                              <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="tele" class="form-control" id="tele" placeholder="Gsm">
+                                    <label for="tele">Établissement de provenance
+
+</label>
+                                </div>
+                                
+                            </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Votre Email</label>
+                                    <input type="date" class="form-control" id="birthday" placeholder="date de naissance">
+                                    <label for="tele">date de naissance
+
+</label>
+                                </div>
+                                
+                            </div>
+ 
+                              <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nom" placeholder="Nom">
+                                    <label for="nom">Nom Tuteur
+
+</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="prenom" class="form-control" id="prenom" placeholder="Prénom">
+                                    <label for="prenom">Prénom Tuteur
+</label>
+                                </div>
+                            </div>
+                               <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="tele" class="form-control" id="tele" placeholder="Gsm">
+                                    <label for="tele">Téléphone Tuteur
+</label>
+                                </div>
+                            </div> <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="tele" class="form-control" id="tele" placeholder="Gsm">
+                                    <label for="tele">Adresse Tuteur
+</label>
                                 </div>
                             </div>
                             <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="tele" class="form-control" id="tele" placeholder="Gsm">
+                                    <label for="tele">Profession Tuteur
+</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Email Tuteur
+</label>
+                                </div>
+                            </div>
+                           <!-- <div class="col-12">
                                 <div class="form-floating">
                                     <input type="password" class="form-control" id="subject" placeholder="Subject">
                                     <label for="subject">Mot de passe</label>
                                 </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Mémoriser moi
-                                </label>
-                              </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Connexion</button>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Confirmer le Mot de passe</label>
+                                </div>
+                            </div>-->
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">inscription</button>
                             </div>
                         </div>
                     </form>
@@ -139,7 +263,7 @@
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Rue 123, Marrakech, Maroc</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+212 512 345678</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>MYSCHOOL@learn.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> MYSCHOOL@learn.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -184,7 +308,7 @@
             <div class="copyright">
                 <div class="row">
                     <div>
-                        &copy; <a class="border-bottom" href="#">MYSCHOOL. 2023</a>, tous les droits sont réservés.
+                        &copy; <a class="border-bottom" href="#">Learn. 2022</a>, tous les droits sont réservés.
                     </div>
                 <!--<div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">

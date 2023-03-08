@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Learn. - inscription</title>
+    <title>MYSCHOOL.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -41,107 +41,87 @@
     <!-- Spinner End -->
 
 
+   
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <!--<h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>-->
-            <img class="logoimg" src="img/leanlogo.png"></img>
+            <img class="logoimg" src="img/logo.png"></img>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Acceuil</a>
-                <a href="courses.html" class="nav-item nav-link">Nos Cours</a>
-                <!--<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="{{url('index')}}" class="nav-item nav-link  ">Acceuil</a>
+                <a href="{{url('courses')}}" class="nav-item nav-link  ">Nos Ecole</a>
+                 
+                <div class="nav-item dropdown">
+                    <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">service</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="{{url('transport')}}" class="dropdown-item">TRANSPORT SCOLAIRE</a>
+                        <a href="{{url('cafe')}}" class="dropdown-item">CAFÉTÉRIA – ICAFÉ</a>
+                       
                     </div>
-                </div>-->
-                <a href="about.html" class="nav-item nav-link">A Propos</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EXTRA</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="{{URL('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
+                        <a href="{{url('bureaux')}}" class="dropdown-item">BUREAU DES ÉTUDIANTS</a>
+                        <a href="{{url('fourniture')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
+                    </div>
+                </div>
+             
+                <a href="{{url('contact')}}" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="Insciption.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
-            <a href="Login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Connexion<i class="fa fa-user ms-3"></i></a>
+            <a href="{{url('inscription')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{url('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block active">Connexion<i class="fa fa-user ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
+ 
 
 
+    <!-- Navbar End -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">inscription</h6>
-                <h1 class="mb-5">S'inscrire</h1>
+    <div class="container-fluid bg-primary py-5 mb-5 page-header-association">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">ASSOCIATION DES PARENTS</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="{{URL('associationdesparent')}}">EXTRA</a></li>
+                            <li class="breadcrumb-item text-white " aria-current="page">ASSOCIATION DES PARENTS</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form class="form-inline">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="nom" placeholder="Nom">
-                                    <label for="nom">Nom</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="prenom" class="form-control" id="prenom" placeholder="Prénom">
-                                    <label for="prenom">Prénom</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="tele" class="form-control" id="tele" placeholder="Gsm">
-                                    <label for="tele">Télephone</label>
-                                </div>
-                            </div>
-                            <h6> êtes-vous ?</h6>
-                            <div class="col-md-6 form-check ">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">Apprenant</label>
-                              </div>
-                              <div class="col-md-6 form-check">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">Formateur</label>
-                              </div>
-                              <br>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Votre Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Mot de passe</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Confirmer le Mot de passe</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">inscription</button>
-                            </div>
-                        </div>
-                    </form>
+        </div>
+    </div> 
+    <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                   
+                    <h1 class="mb-4" id="scientigique"> </h1>
+                    <p class="mb-4">
+                    L’Association de Parents d’Élèves, comme son nom l’indique regroupe les parents des élèves dans une optique de collaboration lors des interventions parascolaires.</br>
+
+Cette association est  constituée pour la première fois durant l’année scolaire 2015/2016. </br>Elle est constituée de 9 adhérents y compris un président, un vice-président, un secrétaire général, un vice-secrétaire général, un Trésorier, un Vice-Trésorier et des conseillers.</br> Sa constitution a pour but de :</br>
+
+*Maintenir un lien entre l’administration du lycée et les familles,</br>
+*Informer les parents sur l’actualité de l’école,</br>
+*Accompagner les parents pour soutenir leur enfant,</br>
+*Créer un champ d’échange et de partage pour les parents.</br>
+      
+                    </div>
+                  
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -157,7 +137,7 @@
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Rue 123, Marrakech, Maroc</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+212 512 345678</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Contact@learn.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>MYSCHOOL@learn.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -202,7 +182,7 @@
             <div class="copyright">
                 <div class="row">
                     <div>
-                        &copy; <a class="border-bottom" href="#">Learn. 2022</a>, tous les droits sont réservés.
+                        &copy; <a class="border-bottom" href="#">MYSCHOOL. 2023</a>, tous les droits sont réservés.
                     </div>
                 <!--<div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
