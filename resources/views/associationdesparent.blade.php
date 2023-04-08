@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>{{ config('app.name') }}</title>
+    <title>MYSCHOOL.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,15 +32,19 @@
 </head>
 
 <body>
-    <!-- Spinner Start 
+    <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>-->
-    
+    </div>
+    <!-- Spinner End -->
+
+
+   
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="{{url('/')}}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <!--<h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>-->
             <img class="logoimg" src="img/logo.png"></img>
         </a>
@@ -49,67 +53,91 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{url('/')}}" class="nav-item nav-link">Acceuil</a>
-                <a href="{{url('nosecoles')}}" class="nav-item nav-link">Nos Ecole</a>
+                <a href="{{url('index')}}" class="nav-item nav-link  ">Acceuil</a>
+                <a href="{{url('courses')}}" class="nav-item nav-link  ">Nos Ecole</a>
                  
                 <div class="nav-item dropdown">
-                    <a href="{{url('services')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">services</a>
+                    <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">service</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="{{url('transport')}}" class="dropdown-item">TRANSPORT SCOLAIRE</a>
-                        <a href="{{url('cafeteriaeticafe')}}" class="dropdown-item">CAFÉTÉRIA – ICAFÉ</a>
+                        <a href="{{url('cafe')}}" class="dropdown-item">CAFÉTÉRIA – ICAFÉ</a>
                        
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="{{url('about')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EXTRA</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="{{URL('associationdesparents')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
+                        <a href="{{URL('associationdesparent')}}" class="dropdown-item">ASSOCIATION DES PARENTS D’ÉLÈVE</a>
                         <a href="{{url('bureaux')}}" class="dropdown-item">BUREAU DES ÉTUDIANTS</a>
-                        <a href="{{URL('fournitures')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
+                        <a href="{{url('fourniture')}}" class="dropdown-item">Fournitures Scolaires 2022 – 2023</a>
                     </div>
                 </div>
              
                 <a href="{{url('contact')}}" class="nav-item nav-link">Contact</a>
             </div>
-            @guest
-            @if (Route::has('login'))
-                <a href="{{route('register')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
-            @endif
-            @if (Route::has('register'))
-            <a href="{{route('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Connexion<i class="fa fa-user ms-3"></i></a>
-            @endif
-            @else
-            <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">{{ Auth::user()->nom }} {{ Auth::user()->prenom }}<i class="fa fa-user ms-3"></i></a>
-            <a href="{{ route('logout') }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
-            onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit()";>Déconnexion<i class="fa fa-arrow-right ms-3"></i></a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-            </form>
-            @endguest
+            <a href="{{url('inscription')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Inscrire<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{url('login')}}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block active">Connexion<i class="fa fa-user ms-3"></i></a>
         </div>
     </nav>
+    <!-- Navbar End -->
+ 
 
-    <main>
-    @yield('content')
-    </main>
-    
-<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+
+    <!-- Navbar End -->
+
+    <div class="container-fluid bg-primary py-5 mb-5 page-header-association">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">ASSOCIATION DES PARENTS</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="{{URL('associationdesparent')}}">EXTRA</a></li>
+                            <li class="breadcrumb-item text-white " aria-current="page">ASSOCIATION DES PARENTS</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                   
+                    <h1 class="mb-4" id="scientigique"> </h1>
+                    <p class="mb-4">
+                    L’Association de Parents d’Élèves, comme son nom l’indique regroupe les parents des élèves dans une optique de collaboration lors des interventions parascolaires.</br>
+
+Cette association est  constituée pour la première fois durant l’année scolaire 2015/2016. </br>Elle est constituée de 9 adhérents y compris un président, un vice-président, un secrétaire général, un vice-secrétaire général, un Trésorier, un Vice-Trésorier et des conseillers.</br> Sa constitution a pour but de :</br>
+
+*Maintenir un lien entre l’administration du lycée et les familles,</br>
+*Informer les parents sur l’actualité de l’école,</br>
+*Accompagner les parents pour soutenir leur enfant,</br>
+*Créer un champ d’échange et de partage pour les parents.</br>
+      
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Accès Rapide</h4>
-                    <a class="btn btn-link" href="{{url('index')}}">Acceuil</a>
-                    <a class="btn btn-link" href="{{url('courses')}}">Nos ECOLES</a>
-                    <a class="btn btn-link" href="">SERVICE</a>
-                    <a class="btn btn-link" href="">EXTRA</a>
-                    <a class="btn btn-link" href="{{url('contact')}}">Contact</a>
+                    <a class="btn btn-link" href="">Acceuil</a>
+                    <a class="btn btn-link" href="">Nos Cours</a>
+                    <a class="btn btn-link" href="">A Propos</a>
+                    <a class="btn btn-link" href="">Contact</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Rue 123, Marrakech, Maroc</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+212 512 345678</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Support@myschool.ma</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>MYSCHOOL@learn.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -154,11 +182,11 @@
             <div class="copyright">
                 <div class="row">
                     <div>
-                        &copy; <a class="border-bottom" href="{{url('/')}}">{{ config('app.name') }} {{ date('Y') }}</a>, tous les droits sont réservés.
+                        &copy; <a class="border-bottom" href="#">MYSCHOOL. 2023</a>, tous les droits sont réservés.
                     </div>
                 <!--<div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
+                            <a href="">Acceuil</a>
                             <a href="">Cookies</a>
                             <a href="">Help</a>
                             <a href="">FQAs</a>
@@ -168,11 +196,23 @@
             </div>
         </div>
     </div>
+    <!-- Footer End -->
+
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

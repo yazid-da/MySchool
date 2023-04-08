@@ -2,8 +2,14 @@
 
 @section('content')
 <section>
-
-    <!-- Carousel Start -->
+<!--<div class="card-body">
+    @if (session('status'))
+    <div class="alert alert-success" role="alert" id="alert">
+        {{ __('You are logged in!') }}
+    </div>
+    @endif
+</div>-->
+<!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
@@ -15,7 +21,7 @@
                                 <h1 class="display-3 text-white animated slideInDown">MY SCHOOL</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Depuis leur création en 1986, les écoles MYSCHOOL se sont engagées à donner aux enfants le goût d’apprendre dans un environnement épanouissant de la maternelle jusqu’aux classes préparatoires.</p>
                                 <a href="{{url('courses')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Lire la suite ...</a>
-                                <a href="{{url('inscription')}}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">S'Inscrire Gratuitement</a>
+                                <a href="{{url('register')}}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">S'Inscrire Gratuitement</a>
                             </div>
                         </div>
                     </div>
