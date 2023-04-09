@@ -31,15 +31,21 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
+
+
+
+
+
+
 /*Admin + Dashboard routes*/
-/*Route::middleware(['auth','isAdmin'])->group(function() {
-    /*Route::get('/dashboard','Admin\DashboardController@index');
-    Route::get('/dashboard', 'Admin\DashboardController@showlist');//shows users in dashboard.blade.php (adminpanel)
+Route::middleware(['auth','isAdmin'])->group(function() {
+    Route::get('/dashboard','Admin\DashboardController@index');
+    //Route::get('/dashboard', 'Admin\DashboardController@showlist');//shows users in dashboard.blade.php (adminpanel)
     
 
     /*users routes*/
-    /*Route::get('/dashboard/utilisateurs', 'Admin\UserController@index'); // shows admin/utilisateurs.blade.php
-    Route::get('/dashboard/utilisateurs', 'Admin\UserController@showuserlist'); //shows users in admin/utilisateurs.blade.php
+    //Route::get('/dashboard/utilisateurs', 'Admin\UserController@index'); // shows admin/utilisateurs.blade.php
+    //Route::get('/dashboard/utilisateurs', 'Admin\UserController@showuserlist'); //shows users in admin/utilisateurs.blade.php
 
 
     /* Categories routes*/
@@ -58,6 +64,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::post('inserer-produit', 'Admin\ProduitController@store'); // Inserer un produit
     Route::get('edit-produit/{id}','Admin\ProduitController@edit'); // modifier un produit
     Route::put('update-produit/{id}','Admin\ProduitController@update'); // MàJ un produit
-    Route::get('delete-produit/{id}','Admin\ProduitController@destroy'); // Supprimer un produit
+    Route::get('delete-produit/{id}','Admin\ProduitController@destroy'); // Supprimer un produit*/
 
 });
