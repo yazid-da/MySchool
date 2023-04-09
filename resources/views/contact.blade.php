@@ -1,17 +1,5 @@
 @extends('layouts.app')
-
 @section('content')
-<section>
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-
     <!-- Header Start -->
     <div class="container-fluid bg-primary py-5 mb-5 page-header-contact">
         <div class="container py-5">

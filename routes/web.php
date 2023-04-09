@@ -25,17 +25,9 @@ Route::get('/fourniture', function () {
 Route::get('/pagenotfound', function () {
     return view('404');
 }); 
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-
-
-
-
-
 
 /*Admin + Dashboard routes*/
 Route::middleware(['auth','isAdmin'])->group(function() {
